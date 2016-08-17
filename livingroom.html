@@ -1,0 +1,134 @@
+
+
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🅂01🄴01</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/anime.js"></script>
+  <style>
+
+  body { 
+      /*background-image: url("img/happy-dance.gif"); */
+      background-image: url("img/partyhard.gif");
+      /*background-repeat: repeat; */
+      background-size: 100% cover;
+    }
+    a {
+      text-decoration: none; color:black; font-size:16px;}
+        a:hover {
+        color:#ff1d8e;
+    }
+    a.exit {
+      margin:0; 
+      position: fixed;
+      z-index: 1;
+      background-color:white;
+    }
+
+    a.next-room {
+      float:right;
+      color:white;
+      position: fixed;
+      right:0;
+      margin-right:25px;
+      z-index: 1;
+      /*opacity:0.5;*/
+      background-color:black;
+    }
+
+    a.next-room:hover {
+      color:yellow;
+    }
+
+
+/*rotations*/
+/*-moz-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
+    opacity:0.5;
+    border-radius:50%;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { transform:rotate(360deg);    }     }*/
+
+  /******horizontal scroll******/
+  .container {
+      white-space: nowrap;
+      overflow-x: scroll;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      margin:0;
+      padding:0;
+      top:0;
+      left:0;
+    }
+  .child-element {
+    background-image: url("img/partyhard03.gif"); 
+    background-repeat: repeat; 
+      min-width: 100%;
+      height: 250px;
+      display: inline-block;
+      padding: 500px 0;
+  }
+  .child1 {
+      background-color: black;
+      opacity: 1;
+      overflow: auto;
+  }
+  .child2 {
+      background-color: black;
+      opacity: 0.86;
+  }
+  .child3 {
+      background-color: black;
+      opacity: 0.72;
+  }
+  .child4 {
+      background-color: black;
+      opacity: 0.58;
+  }
+  .child5 {
+      background-color: black;
+      opacity: 0.44;
+  }
+  .child6 {
+      background-color: black;
+      opacity: 0.3;
+  }
+  .child7 {
+    background-color: black;
+    opacity: 0.16;
+  }
+
+  </style>
+</head>
+
+  <body>
+    <a class="exit" href="../../front01.html">&larr; exit party</a><br>
+    <!-- <a style="margin-top:2px;" class="exit" href="bedroom02.html">&larr; next party room</a> -->
+  <a style="margin-top:2px;" class="exit" href="bedroom03.html#gray">&uarr; party upstairs &uarr;</a>
+  <a class="next-room" href="garage.html">next party room &rarr;</a>
+  <div class="container container-e">
+  <div><audio loop id="e" src="assets/living-room.mp3" type="audio/mpeg"></audio></div>
+  <div><audio loop id="fsharp" src="assets/garage.mp3" type="audio/mpeg"></audio></div>
+  <div id="purple" class="child-element child1"></div><!--
+    --><div id="orange" class="child-element child2"></div><!--
+    --><div id="black" class="child-element child3"></div><!--
+    --><div id="green2" class="child-element child4"></div><!--
+    --><div id="gray" class="child-element child5"></div><!--
+    --><div id="red2" class="child-element child6"></div><!--
+    --><div id="white" class="child-element child7" name="white"></div>
+
+
+
+  <!-- <img class="repeat" src="img/happy-dance.gif"> -->
+  <script>
+  </script>
+
+  </body>
+  </html>
